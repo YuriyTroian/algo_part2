@@ -5,13 +5,13 @@ def banana_and_jackie(piles, H):
     left, right = 1, max(piles)
 
     while left < right:
-        mid = (left + right) // 2
-        hours_needed = sum(math.ceil(p / mid) for p in piles)
+        ser = (left + right) // 2
+        hours_needed = sum(math.ceil(el / ser) for el in piles)
 
         if hours_needed <= H:
-            right = mid
+            right = ser
         else:
-            left = mid + 1
+            left = ser + 1
 
     return left
 

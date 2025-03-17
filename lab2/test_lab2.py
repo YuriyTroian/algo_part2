@@ -8,4 +8,5 @@ class TestBananaAndJackie(unittest.TestCase):
         self.assertEqual(banana_and_jackie([30,11,23,4,20], 6), 23)
 
 
-
+if __name__ == "__main__":
+    unittest.main()
